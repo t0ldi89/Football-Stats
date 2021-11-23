@@ -1,0 +1,382 @@
+.menu-container {
+    height: 10vh;
+    background-color: $black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+
+
+    &__logo{
+        display: flex;
+        align-items: center;
+        justify-content:flex-start;
+  
+
+        .logo-img{
+            background-image: url('/public/img/Logo_sygnet_white.svg');
+            background-repeat: no-repeat;
+            background-size:contain;
+            height:5vh;
+            width: 15%;
+            display: flex;
+            align-items: center;
+            justify-content:center;
+            margin-left: 10px;
+        
+            @include tablet{
+                height: 7vh;
+            }
+
+            @include desktop{
+                height: 10vh;
+             
+            }
+        }
+        .logo__word{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height:8vh;
+            font-family: $mainFont;
+            color: $white;
+            font-size: 1.2em;
+            padding-left: 10px;
+
+            @include tablet{
+                font-size: 2em;
+            }
+
+            @include desktop{
+
+            }  
+        }
+        
+        .logo__word-two{
+            font-size:10px;
+
+            @include tablet{
+                font-size: 15px;
+            }
+            @include desktop{
+                font-size: 20px;
+            }
+        }
+    }
+   
+
+    &__hamburger-menu{
+        color: $white;
+        font-size: 2em;
+        margin-right: 20px;
+
+        @include tablet{
+            font-size: 3em;
+        }
+
+        @include desktop{
+            display: none;
+        }
+
+    }
+    
+
+    &__menu{
+        list-style: none;
+        display: none;
+        
+
+        @include desktop {
+            display: block;
+            font-size: 1.3em;
+            font-family: $mainFont;
+            
+            
+
+            ul {
+                display: flex;
+                list-style-type: none;
+                margin: 0;
+                
+
+                li{
+                 
+                   
+                    padding: 10px;
+                    margin-right: 16px;
+                    
+                    font-size: 15px;
+
+                    i{
+                        padding-right: 10px;
+                    }
+                    
+                }
+
+                li:hover{
+                    background-color: $white;
+                    border: 1px solid $black;
+                    color: $black;
+                    border-radius: 5%;
+                }
+            }
+            color: $white;
+        }
+    }
+}
+
+.intro{
+    background-color: $black;
+    height: 80vh;   
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    
+
+
+    &__word-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: $white;
+        font-family: $mainFont;
+        margin-top: 100px;
+        
+        
+
+    &__word{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+
+        @include tablet{
+            font-size: 4rem;
+        }
+
+        @include desktop{
+            font-size: 3rem;
+        }
+    }  
+    &__word-two{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        font-size: 1rem;
+
+        @include tablet{
+            font-size: 2rem;
+        }
+        @include desktop{
+            font-size: 3rem;
+        }
+    }
+    &__word-three{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        font-size: 1rem;
+        margin-top: 40px;
+
+        @include tablet{
+            font-size: 2rem;
+        }
+        @include desktop{
+            font-size: 3rem;
+        }
+    }
+}   
+                    @keyframes wordPulse {
+                        0%{
+                            display: none;
+                            color: $black;
+                             
+                            }
+                        100%{   
+                            color: $white;
+                            }
+                                        }
+                
+                    .word-cursor{
+                        color: $black;
+                            font-size: 1.5rem;
+                            animation: wordPulse 1s  linear 4 backwards ;
+
+                            @include tablet{
+                                font-size: 2rem;
+                            }
+                            @include desktop{
+                                font-size: 5rem;
+                            }
+                            
+                        }
+                    .word-cursor-two{
+                        animation: wordPulse 1s 4s  linear 6 backwards ;
+                        color: $black;
+
+                        @include tablet{
+                            font-size: 2rem;
+                        }
+                        @include desktop{
+                            font-size: 3rem;
+                        }
+                    } 
+                    .word-cursor-three{
+                        animation: wordPulse 1s 10s  linear 6 backwards ;
+                        color: $black;
+
+                        @include tablet{
+                            font-size: 2rem;
+                        }
+                        @include desktop{
+                            font-size: 3rem;
+                        }
+                    }             
+                    
+
+    }
+    .main__intro-container{
+        height: 80vh;
+        width: 100%;
+
+
+       
+       
+
+        @keyframes background-Intro {
+            0%{
+               opacity: 0.0;
+            }
+            50%{
+                opacity: 0.5;
+            }
+            100%{
+                background-color: rgba(255,255,255,1);
+                opacity: 1.0;
+            }
+        }
+
+        animation: background-Intro 3s linear forwards;
+            .name-word{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color:$black;
+                font-family: $mainFont;           
+                text-align: center;
+                height: 100%;
+                width: 100%;            
+                font-size: 2em;
+
+            }
+
+           
+    }
+
+    .main-container{
+        height: 80vh;
+    }
+
+
+    .hamburger {
+
+        @include desktop{
+            display: none;
+        }
+        margin: 20px;
+        padding: 0;
+        border: 0;
+        background-color: transparent;
+        color:white;
+        cursor: pointer;
+        &:focus {
+            & > .hamburger__container {
+                  box-shadow: 0 0 2px 2px #51a7e8;
+            }
+        }
+    }
+    
+    .hamburger__container {
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: 35px;
+        height: 30px;
+    }
+    
+    .hamburger__bars {
+        position: absolute;
+        width: 35px;
+        height: 2px;
+        background-color: white;
+        transition: transform 220ms ease-in-out;
+        &:before, &:after {
+            display: block;
+            position: absolute;
+            width: 35px;
+            height: 2px;
+            background-color: white;
+            content: '';
+        }
+        &:before {
+            top: -12px;
+            transition: top 100ms 250ms ease-in, transform 220ms ease-in-out;
+        }
+        &:after {
+            bottom: -12px;
+            transition: bottom 100ms 250ms ease-in, 
+                          transform 220ms ease-in-out;
+        }
+    }
+    
+    .hamburger--active {
+        .hamburger__bars {
+            transform: rotate(225deg);
+            transition: transform 220ms 120ms ease-in-out;
+            &:before {
+                top: 0;
+                transition: top 100ms ease-out;
+            }
+            &:after {
+                bottom: 0;
+                transform: rotate(-90deg);
+                transition: bottom 100ms ease-out, 
+                              transform 220ms 120ms ease-in-out;
+            }
+        }
+    }
+    
+    .hamburger, .hamburger__container {
+        &:focus {
+              outline: none;
+          }
+    }
+    .hamburger-menu-side{
+        height: 80vh;
+        width: 0;
+        z-index: 2;
+        @include desktop{
+            display: none;
+        }
+
+        .openHamb{
+            
+            height: 80 vh;
+            width: 0px;
+                background-color: red;
+
+                @keyframes open {
+                    0%{
+                        width: 0px;
+                    }
+                    100%{
+                        width: 500px;
+                    }
+                }
+                 animation: open 5s infinite;
+        }
+    }

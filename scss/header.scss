@@ -1,0 +1,12 @@
+.test{
+
+background-color: green;
+
+@include tablet{
+    background-color: blue;
+}
+
+@include desktop{
+    background-color: yellow;
+}
+}
