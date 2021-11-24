@@ -1,30 +1,16 @@
-
-import React from 'react';
 import React, {useState,useEffect} from 'react';
-import Main from '../public/components/Header'
-import Skills from '../public/components/Skills';
-import Myworks from '../public/components/MyWorks';
-import Contact from '../public/components/Contact';
-import Footer from '../public/components/Footer';
+import LoginSide from '../public/components/LoginSide';
 
 
 
 
-function App() {
-
-
-  return (
-    <>
-    <div className='test'>Hello frfe</div>
-    </>
-  );
-
-  
-  return (
-    <>
-      <Main/>
+const App = () =>{
+    return (
+      <>
+      <LoginSide />
       </>
-  )
+    )  
 }
+
 
 export default App;

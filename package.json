@@ -1,10 +1,8 @@
 {
-
-"name": "football-stats",
-"theme_color": "#ffffff",
-"background_color": "#ffffff",
-"display": "standalone",
-
+  "name": "football-stats",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "display": "standalone",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -16,32 +14,32 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.7.4",
-    "@babel/plugin-proposal-class-properties": "^7.7.4",
-    "@babel/preset-env": "^7.7.4",
-    "@babel/preset-react": "^7.7.4",
+    "@babel/core": "^7.16.0",
+    "@babel/plugin-proposal-class-properties": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "@babel/preset-react": "^7.16.0",
     "babel-core": "^7.0.0-0",
     "babel-loader": "^7.1.5",
     "babel-preset-env": "^1.7.0",
     "babel-preset-es2015": "^6.24.1",
     "css-loader": "^0.28.11",
-    "file-loader": "^5.0.2",
+    "file-loader": "^5.1.0",
     "image-webpack-loader": "^6.0.0",
     "node-sass": "^4.13.1",
     "sass-loader": "^6.0.7",
     "scss-loader": "0.0.1",
     "style-loader": "^0.23.1",
     "url-loader": "^3.0.0",
-    "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.10",
-    "webpack-dev-server": "^3.9.0"
+    "webpack": "^4.46.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.3"
   },
   "dependencies": {
-    "@nivo/bar": "^0.61.0",
-    "react": "^16.11.0",
-    "react-dom": "^16.11.0",
-    "react-router-dom": "^5.1.2",
+    "@nivo/bar": "^0.74.0",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-router-dom": "^5.3.0",
     "save": "^2.4.0",
-    "whatwg-fetch": "^3.0.0"
+    "whatwg-fetch": "^3.6.2"
   }
 }

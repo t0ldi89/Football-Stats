@@ -2,7 +2,7 @@ const path = require("path");
 const entryFile = "./src/index.js";
 
 module.exports = {
-    entry: ["whatwg-fetch", `./${entryFile}`],
+    entry: ["whatwg-fetch", `${entryFile}`],
     output: {
         filename: "out.js",
         path: path.resolve(__dirname, `/build`),
@@ -31,9 +31,14 @@ module.exports = {
             },
             {
                 test: /\.(png|jpg|jpeg|gif|ico|svg)$/,
-                use: [
-                    'file-loader'
-                ]
+                use: {
+                    loader: 'file-loader',
+                    options: {
+                        name: "[name].[ext]",
+                        outputPath: "img",
+                        esModule: false
+                }
+            }
                 
             }
         ]

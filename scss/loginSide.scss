@@ -1,0 +1,147 @@
+ 
+ .loginPageBackground{
+    width: 100vw;
+    height: 100vh;
+
+    background-image: url(../public/img/loginMobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    .loginBox{
+        width: 80vw;
+        height: 40vh;
+        background-color: rgba($color: $grey-color, $alpha: 0.4);
+        border: 4px solid $grey-color;
+        font-family: $roboto;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        @include tablet{
+            background-color: rgba($color: $grey-color, $alpha: 0.8);
+            height: 60vh;
+        }
+
+        @include desktop{
+            height: 80vh;
+        }
+
+        @include hd-desktop{
+            height: 90vh;
+        }
+
+        .loginBoxName{
+            font-size: 2em;
+
+            @include tablet{
+                font-size: 4em;
+            }
+
+            @include desktop{
+                font-size: 6em;
+            }
+
+        }
+        .loginBoxLogin{
+            width: 80%;
+            height: 50%;
+            border: 3px solid $grey-color;
+            background-color: rgba($grey-color, $alpha: 0.8);
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: column;
+
+            @include tablet {
+                height: 70%;
+                background-color: rgba($grey-color, $alpha: 0.9);
+            }
+
+            @include desktop{
+                height: 60%;
+                background-color: rgba($khaki-color, $alpha: 0.6);
+            }
+            
+            .loginBoxName{
+                display: flex;
+                flex-direction: row;
+                font-size: 1.5em;
+                justify-content: space-between;
+
+                input{
+                    width: 65%; 
+                }
+
+                @include tablet {
+                    width: 80%;
+                    justify-content: space-evenly;
+                    font-size: 2em;
+
+                    input{
+                        width: 60%;
+                    }
+                }
+
+                @include desktop {
+                    width: 100%;
+                    justify-content: flex-start;
+                    margin-left: 50px;
+                }
+            }
+
+            .loginBoxNameCheckBox{
+                font-size: 2em;
+
+                input{
+                    width: 2em;
+                    height: 2em;
+                    size: 2em;
+                    margin: 10px;
+                }
+
+            }
+
+            .loginBoxNameDesktop{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .loginBoxNameBnt{   
+                font-size: 0.8em;
+
+                @include tablet{
+                    font-size: 1em;
+                }
+
+                @include desktop{
+                    align-items: center;
+                }
+
+               
+
+               
+            }
+        }
+    }
+
+    @include tablet{
+        background-image: url(../public/img/login.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    
+    @include desktop{
+        background-image: url(../public/img/loginPc.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+ }
+
