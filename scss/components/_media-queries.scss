@@ -10,12 +10,6 @@
   }
 }
 
-@mixin large-desktop {
-  @media (min-width: map-get($breakpoints, large-desktop)) {
-    @content;
-  }
-}
-
 @mixin hd-desktop {
   @media (min-width: map-get($breakpoints, hd-desktop)) {
     @content;

@@ -11,6 +11,22 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    @include tablet{
+        background-image: url(../public/img/login.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    
+    @include desktop{
+        background-image: url(../public/img/loginPc.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    @include hd-desktop{
+        background-color: bisque;
+    }
     
     .loginBox{
         width: 80vw;
@@ -132,16 +148,6 @@
         }
     }
 
-    @include tablet{
-        background-image: url(../public/img/login.jpg);
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-    }
-    
-    @include desktop{
-        background-image: url(../public/img/loginPc.jpg);
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-    }
+  
  }
 

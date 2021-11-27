@@ -1,4 +1,5 @@
 import React, {useState,useEffect} from 'react';
+import { Link } from 'react-router-dom';
 
 const LoginSide = () =>{
     return (
@@ -21,7 +22,9 @@ const LoginSide = () =>{
                                 <label>Zaloguj jako administrator</label>
                             </div>
                             <div className='loginBoxName loginBoxNameDesktop'>
-                                <button className='loginBoxNameBnt'>Zaloguj</button>
+                               <Link to='/MainMenu'> 
+                               <button className='loginBoxNameBnt'>Zaloguj</button>
+                               </Link>
                             </div>
                     </div>  
                 </div>
