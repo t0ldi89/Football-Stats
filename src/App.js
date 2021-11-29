@@ -1,4 +1,4 @@
-import React, {useState,useEffect} from 'react';
+import React from 'react';
 import {
   HashRouter,
   Route,
@@ -7,20 +7,22 @@ import {
   NavLink,
   } from 'react-router-dom';
 import LoginSide from '../public/components/LoginSide';
-import MainMenu from '../public/components/MainMenu';
+import AdminMainMenu from '../public/components/AdminMainMenu';
+
+
+
 
 
 
 
 const App = () =>{
-    return <HashRouter>
- <>
+
+  return ( 
+<HashRouter>
  <Route exact path="/" component={LoginSide} />
- <Route path='/mainMenu' component={MainMenu} />
-  </>
-
-
-    </HashRouter>
+ <Route path='/mainMenu' component={AdminMainMenu } /> 
+   </HashRouter>
+  )
       
 }
 

@@ -54,7 +54,11 @@
         }
 
         .loginBoxName{
-            font-size: 2em;
+            font-size: 1.5em;
+
+            input{
+                width: 50%;
+            }
 
             @include tablet{
                 font-size: 4em;
@@ -90,9 +94,15 @@
                 flex-direction: row;
                 font-size: 1.5em;
                 justify-content: space-between;
+                align-items: center;
+
+                div{
+                    margin: 10px;
+                }
 
                 input{
                     width: 65%; 
+                    height: 40%;
                 }
 
                 @include tablet {
@@ -112,15 +122,22 @@
                 }
             }
 
-            .loginBoxNameCheckBox{
-                font-size: 2em;
-
-                input{
-                    width: 2em;
-                    height: 2em;
-                    size: 2em;
-                    margin: 10px;
-                }
+           
+           
+                @include desktop{
+                    .loginBoxNameCheckBox{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        
+        
+                        input{
+                            width: 2em;
+                            height: 2em;
+                            size: 2em;
+                            margin: 10px;
+                        }
+                } 
 
             }
 
@@ -128,6 +145,8 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+
+               
             }
 
             .loginBoxNameBnt{   
