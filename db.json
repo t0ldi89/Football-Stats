@@ -1,9 +1,8 @@
 {
-"cars": [
+"adminMenu": [
     {
     "id": 1 ,
-    "name": "Gallardo" ,
-    "brand": "Lamborghini"
+    "clubName": "Gallardo"
     }
     ]
 }

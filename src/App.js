@@ -9,15 +9,8 @@ import {
 import LoginSide from '../public/components/LoginSide';
 import AdminMainMenu from '../public/components/AdminMainMenu';
 
-
-
-
-
-
-
 const App = () =>{
-
-  return ( 
+  return (   
 <HashRouter>
  <Route exact path="/" component={LoginSide} />
  <Route path='/mainMenu' component={AdminMainMenu } /> 

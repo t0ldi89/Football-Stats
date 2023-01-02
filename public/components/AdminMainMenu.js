@@ -1,46 +1,59 @@
 import React, { useState } from "react";
+import Clubname from "./ClubName";
 import { useSelector } from "react-redux";
+import Treiners from "./Treiners";
 
 
 
 
 const AdminMainMenu = () => {
+    const clubName = useSelector(state => state.changeClubName);
 
-    const [name, setChangeName] = useState(' ')
+//     const [name, setChangeName] = useState(' ')
+//     const [clubName, setClubName] = useState(' ')
 
-    const handleOnChange = (dupa) =>{
+//     const handleOnChange = (e) =>{
         
-       setChangeName(dupa.target.value)
+//         setChangeName(e.target.value)
+        
+//    }
 
-       console.log({name})
-   }
-
-     const handleOnClik = (dupa) =>{
-         dupa.preventDefault();
-        setChangeName(dupa.target.value)
-
-        console.log({name})
-    }
+//      const handleOnClik = (e) =>{
+//          e.preventDefault();
+//         setClubName(name)
+       
+//     }
    
 
-    const changeName = useSelector(state => state.changeClubName)
+    // const changeName = useSelector(state => state.changeClubName)
     return (
         <>
         <header className='adminMenuHeader'>
         <div>Football STATS v.1.0</div>
-        <div>{changeName}</div>
+        <div>{clubName}</div>   
         </header>
-        <section>
-            <ul>
-                <li>Nazwa Klubu:
-                    <input onChange={handleOnChange}></input>
-                    <button onClick={handleOnClik}>ZMień nazwe klubu</button>
-                </li>
-                <li>Trenerzy</li>
-                <li>Roczniki</li>
-                <li>Dodawnie uprawnień</li>
-            </ul>
+            <section className="adminMainMenu">
+                <div className='clubNameAndTrainsers'>
+                    <div >
+                    <Clubname/>
+                    </div>
+                    <div>
+                    <Treiners/>
+                    </div>
+                </div>
+                {/* <div className='clubNameAndTrainsers'>
+                    <div className="clubName">
+                    Roczniki:
+                    </div>
+                    <div className="treiners">
+                    <ul>
+                        <li>Uprawienia:
+                        </li>
+                    </ul>
+                    </div>
+                </div> */}
         </section>
+       
         <footer>
             <button>Wyloguj</button>
         </footer>

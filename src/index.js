@@ -7,27 +7,9 @@ import {Provider } from 'react-redux';
 import allReducers from './reducers';
 
 
-
-
-//ACTION INCREMENT
-const increment = () =>{
-  return {
-    type: 'INCREMENT'
-  }
-}
-
-const decrement = () =>{
-  return {
-    type: 'DECREMENT'
-  }
-}
-//REDUCER
-
-
-
 const store = createStore(allReducers,  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
-//DISPATCH
 
+export default store;
 
 
 ReactDOM.render(
@@ -38,5 +20,4 @@ ReactDOM.render(
   </Provider>,
   document.getElementById('root')
 );
-
 

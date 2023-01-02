@@ -1,8 +1,10 @@
-import clubName from "./clubName";
+import clubNameReducer from './clubName';
+import addTreinersReducer from './addTreinerReducer';
 import { combineReducers } from "redux";
-
+ 
 const allReducers = combineReducers({
-    changeClubName: clubName
+    changeClubName: clubNameReducer,
+    addTreiner: addTreinersReducer
 })
 
 

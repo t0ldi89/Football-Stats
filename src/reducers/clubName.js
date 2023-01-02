@@ -1,11 +1,11 @@
- const clubName = (state = 'gowno', action) =>{
+ const clubNameReducer = (state = 'Nazwa Twojego Klubu', action) =>{
      switch(action.type){
-        case 'CHANGEnAME': 'dupsko'
-        return 'dupa'
-        default:
-            return state;
+    case "CLUBNAME":
+        return  action.data ;
+        default :
+        return state
      }
 
 }
 
-export default clubName;
+export default clubNameReducer;
