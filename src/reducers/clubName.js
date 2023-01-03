@@ -1,4 +1,4 @@
- const clubNameReducer = (state = 'Nazwa Twojego Klubu', action) =>{
+ const clubNameReducer = (state = '', action) =>{
      switch(action.type){
     case "CLUBNAME":
         return  action.data ;

@@ -33,16 +33,43 @@
         padding: 0;
         height: 80vh;
         width: 100vw;
-        
-        .clubNameAndTrainsers {
-                width: 100vw;
-                height: 40vh;
-                background-color: grey;
-                margin: 0;
+        display: flex;
+        flex-direction: row;
+
+        .adminMenu{
+                width: 20vw;
+                height: 80vh;
+                background-color: gray;
+                display: flex;
+                justify-content: space-evenly;
+                flex-direction: column;
+                padding: 0 10px 0 10px;
+                border-right: 2px black dashed;
+
+                .adminMenuBnt{
+                        height: 10vh;
+                }
+        }
+
+        .adminMenuScreen{
+                width: 89vw;
+                height: 80vh;
+                background-color: lightgray;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                flex-direction: row;
+
+                .adminMenuMainScreen{
+                        width: 75vw;
+                        height: 75vh;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                }
+        }
+        
+        .clubNameAndTrainsers {
                 
                 ul{
                 list-style: none;
@@ -110,7 +137,7 @@
                                 .addPermissionsOptions{
                                 display: flex;
                                 flex-direction: row;
-                                padding: 5px;
+                                padding: 5px 5px 5px 0;
                                 }
                         }
 

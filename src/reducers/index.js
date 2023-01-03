@@ -4,7 +4,7 @@ import { combineReducers } from "redux";
  
 const allReducers = combineReducers({
     changeClubName: clubNameReducer,
-    addTreiner: addTreinersReducer
+    addTreiner: addTreinersReducer,
 })
 
 
