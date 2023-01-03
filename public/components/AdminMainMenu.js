@@ -3,6 +3,7 @@ import Clubname from "./ClubName";
 import { useSelector } from "react-redux";
 import Treiners from "./Treiners";
 import { Link } from 'react-router-dom';
+import Team from "./Team";
 
 
 
@@ -20,7 +21,7 @@ const AdminMainMenu = () => {
    
         const [adminMenuChangeBnt, setadminMenuChangeBnt] = useState({
             changeName: false,
-            addTeanm: false,
+            addTeam: false,
             addTreiner: false,
             addInfo: false,
             logOut: false
@@ -31,7 +32,7 @@ const AdminMainMenu = () => {
           case '1':
               return setadminMenuChangeBnt({
                 changeName: true,
-                addTeanm: false,
+                addTeam: false,
                 addTreiner: false,
                 addInfo: false,
                 logOut: false
@@ -39,7 +40,7 @@ const AdminMainMenu = () => {
               case '2':
               return setadminMenuChangeBnt({
                 changeName: false,
-                addTeanm: true,
+                addTeam: true,
                 addTreiner: false,
                 addInfo: false,
                 logOut: false
@@ -47,7 +48,7 @@ const AdminMainMenu = () => {
               case '3':
               return setadminMenuChangeBnt({
                 changeName: false,
-                addTeanm: false,
+                addTeam: false,
                 addTreiner: true,
                 addInfo: false,
                 logOut: false
@@ -56,7 +57,7 @@ const AdminMainMenu = () => {
               case '4':
               return setadminMenuChangeBnt({
                 changeName: false,
-                addTeanm: false,
+                addTeam: false,
                 addTreiner: false,
                 addInfo: true,
                 logOut: false
@@ -64,7 +65,7 @@ const AdminMainMenu = () => {
               case '5':
               return setadminMenuChangeBnt({
                 changeName: false,
-                addTeanm: false,
+                addTeam: false,
                 addTreiner: false,
                 addInfo: false,
                 logOut: true
@@ -95,7 +96,7 @@ const AdminMainMenu = () => {
                 </div>
                 <div className="adminMenuScreen">
                     <div className="adminMenuMainScreen">
-                       {adminMenuChangeBnt.changeName ? <Clubname/> : adminMenuChangeBnt.addTreiner ? <Treiners/> : sentens}
+                       {adminMenuChangeBnt.changeName ? <Clubname/> : adminMenuChangeBnt.addTeam ? <Team/> : adminMenuChangeBnt.addTreiner ? <Treiners/> : sentens}
                     </div>
                 </div>
                 {/* <div className='clubNameAndTrainsers'>
